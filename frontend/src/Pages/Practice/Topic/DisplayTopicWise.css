@@ -1,0 +1,9 @@
+.back-link {
+  display: inline-block;
+  margin: 1rem 1rem;
+  font-size: 1.2rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}

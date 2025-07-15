@@ -1,0 +1,79 @@
+/* Container for the revision page */
+.revision-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.revision-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Empty message */
+.revision-empty {
+  font-style: italic;
+  color: #777;
+}
+
+/* Unordered list of questions */
+.revision-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Each question card */
+.revision-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.revision-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Question title */
+.revision-title {
+  font-size: 1.3rem;
+  color: #222;
+  margin: 0;
+}
+
+/* Difficulty text */
+.revision-difficulty {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.2rem 0 0.8rem 0;
+}
+
+/* LeetCode link */
+.revision-link {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.revision-link:hover {
+  text-decoration: underline;
+}
+
+/* Delete button */
+.revision-delete-button {
+  background-color: #e53935;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.revision-delete-button:hover {
+  background-color: #c62828;
+}

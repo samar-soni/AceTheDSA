@@ -1,0 +1,57 @@
+.company-title{
+  font-family: outfit, sans-serif;
+   margin: 50px 5rem;
+   align-items: center;
+    text-align: center;
+}
+.company-questions-container{
+    border: 2px solid #e5e7eb;
+    margin: 5rem 5rem;
+    
+}
+@media (max-width: 768px) {
+  .company-list-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+}
+.company-list-container a p{
+  font-family:Outfit, Robotic;
+  border: 2px solid #e5e7eb;
+}
+.back-link {
+  display: inline-block;
+  margin: 1rem 1rem;
+  font-size: 1.2rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+.back-link a{
+      font-size: 50px;
+}
+
+.back-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+@media  (max-width: 768px) {
+  .company-title {
+    font-size: 1.5rem;
+    margin: 20px 2rem;
+  }
+  
+  .company-questions-container {
+    margin: 2rem;
+    padding: 1rem;
+  }
+  
+  .back-link {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  
+}

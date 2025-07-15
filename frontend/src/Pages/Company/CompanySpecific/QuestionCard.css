@@ -1,0 +1,125 @@
+/* Container for the question card */
+.question-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.question-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header section */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Difficulty badge styles */
+.difficulty {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.difficulty.easy {
+  background-color: #66bb6a; /* green */
+}
+
+.difficulty.medium {
+  background-color: #ffa726; /* orange */
+}
+
+.difficulty.hard {
+  background-color: #ef5350; /* red */
+}
+
+/* LeetCode link */
+.leetcode-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.leetcode-link:hover {
+  text-decoration: underline;
+}
+
+/* Note section */
+.note-section {
+  margin-top: 1rem;
+}
+
+.note-input {
+  width: 70%;
+  padding: 8px 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  outline: none;
+}
+
+.note-button {
+  padding: 8px 12px;
+  background-color: #3949ab;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-right: 6px;
+}
+
+.note-button:hover {
+  background-color: #283593;
+}
+
+/* Note list */
+.note-list {
+  margin-top: 0.75rem;
+  padding-left: 1rem;
+}
+
+.note-item {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.4rem;
+}
+@media (max-width: 780px) {
+  .question-card {
+    padding: 1rem;
+  }
+  .question-title {
+    font-size: 1.1rem;
+  }
+
+  .note-input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .note-button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+}

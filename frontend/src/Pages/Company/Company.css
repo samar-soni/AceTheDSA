@@ -1,0 +1,40 @@
+.company-list-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.company-list-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+.company-list-container a {
+  text-decoration: none;
+}
+
+.company-list-container p {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1f2937;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.company-list-container p:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.03);
+}
+
+.company-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+

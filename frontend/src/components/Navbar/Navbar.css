@@ -1,0 +1,188 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(8px);
+}
+
+.hamburger.active {
+  background: transparent;
+}
+
+.hamburger.active::before {
+  transform: rotate(45deg);
+}
+
+.hamburger.active::after {
+  transform: rotate(-45deg);
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  font-family: 'Outfit', sans-serif;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #666;
+}
+
+.auth-button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #3949ab;  /* Indigo */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.25s ease, transform 0.1s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-button:hover {
+  background-color: #303f9f;
+  transform: translateY(-1px);
+}
+
+.auth-button:active {
+  transform: translateY(0px);
+  background-color: #283593;
+}
+
+.auth-logout-button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #d61212;  /* Indigo */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.25s ease, transform 0.1s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-logout-button:hover {
+  background-color: #e01822;
+  transform: translateY(-1px);
+}
+
+.auth-logout-button:active {
+  transform: translateY(0px);
+  background-color: #ec092f;
+}
+
+
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar-menu.active  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 11%;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  /* .navbar-menu {
+    display: none;
+    position: absolute;
+    top:11%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  } */
+
+  .navbar-menu  {
+    display: none;
+  }
+
+  .nav-links {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+}
+
