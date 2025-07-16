@@ -14,7 +14,7 @@ const QuestionCard = ({ title, difficulty, link }) => {
   };
   const markForRevision = async ({title,difficulty,link}) => {
     try{
-      const res = await fetch('http://localhost:3000/api/user/markQuestion', {
+      const res = await fetch('https://acethedsa-backend.onrender.com/api/user/markQuestion', {
         method: 'POST',
         headers:{
           "Content-Type": "application/json"
