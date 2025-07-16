@@ -34,35 +34,34 @@ JWT_SECRET=your_jwt_secret
 
 ## 📸 Screenshots
 
-### 🖼️ User Login Page
+### 🖼️ Home Page
 <img width="1362" height="596" alt="User Login Page" src="https://github.com/user-attachments/assets/629dc386-f146-444a-96e5-ac29f6451f11" />
 
-- Displays the login interface for users to access their account.
+
 
 ---
 
-### 🖼️ Marked Questions Page
+### 🖼️ Topics Name
 <img width="1321" height="589" alt="Marked Questions Page" src="https://github.com/user-attachments/assets/c7c0e53d-96e7-49fb-a638-a02540a9d756" />
 
-- Shows questions marked for revision by the user.
+
 
 ---
 
-### 🖼️ Add Question for Revision
+### 🖼️ Company Wise Questions
 <img width="1347" height="566" alt="Add Question for Revision" src="https://github.com/user-attachments/assets/8ece21d7-a05e-4302-a10c-b1570b1762cb" />
 
-- Users can add DSA questions they want to revise later.
 
 ---
 
-### 🖼️ Delete Marked Question
+### 🖼️  Marked Questions
 <img width="1346" height="588" alt="Delete Marked Question" src="https://github.com/user-attachments/assets/71dbedd7-0fe9-4871-b555-47fcab730e1d" />
 
 - Provides functionality to delete a question from the revision list.
 
 ---
 
-### 🖼️ User Dashboard
+### 🖼️ Question Display
 <img width="1343" height="586" alt="User Dashboard" src="https://github.com/user-attachments/assets/41f3427a-f203-463f-adc2-69d34329c767" />
 
 
