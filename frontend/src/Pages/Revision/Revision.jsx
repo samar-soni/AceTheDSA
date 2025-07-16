@@ -28,7 +28,7 @@ const Revision = () => {
   const deleteQuestion = async (title) => {
      try{
       console.log("Deleting question with title:", title);
-      const res = await fetch(`http://localhost:3000/api/user/revision/${encodeURIComponent(title)}`, {
+      const res = await fetch(`https://acethedsa-backend.onrender.com/api/user/revision/${encodeURIComponent(title)}`, {
         method: 'DELETE',
      });
      if(res.ok){
