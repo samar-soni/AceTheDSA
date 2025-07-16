@@ -9,7 +9,7 @@ const Revision = () => {
 
   const fetchRevisionQuestions = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/user/revision");
+      const res = await fetch("https://acethedsa-backend.onrender.com/api/user/revision");
       const data = await res.json();
 
       if (res.ok) {
