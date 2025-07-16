@@ -65,4 +65,4 @@ JWT_SECRET=your_jwt_secret
 ### 🖼️ User Dashboard
 <img width="1343" height="586" alt="User Dashboard" src="https://github.com/user-attachments/assets/41f3427a-f203-463f-adc2-69d34329c767" />
 
-- A summarized view of the user's interaction with marked questions.
+
