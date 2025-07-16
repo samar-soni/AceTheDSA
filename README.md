@@ -6,7 +6,7 @@ A Node.js + Express backend for **AceTheDSA**, a coding practice platform that a
 
 ## 🌐 Live Frontend URL
 
-> https://your-acethedsa-frontend.onrender.com
+> [https://your-acethedsa-frontend.onrender.com](https://acethedsa-frontend.onrender.com/practice/hashtable)
 
 Make sure to replace this with your actual Render deployment URL.
 ---
