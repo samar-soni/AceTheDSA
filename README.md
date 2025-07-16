@@ -13,10 +13,11 @@ Make sure to replace this with your actual Render deployment URL.
 
 ## 📦 Tech Stack
 
+- **Frontend Framework**: Reactjs 
 - **Backend Framework**: Node.js, Express.js  
 - **Database**: MongoDB (via MongoDB Atlas)  
 - **Middleware**: CORS, body-parser, dotenv  
-- **Authentication**: JWT (optional implementation)  
+- **Authentication**: JWT  
 - **Hosting**: Render  
 
 ---
@@ -30,14 +31,37 @@ PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 
-Screenshots
-<img width="1362" height="596" alt="image" src="https://github.com/user-attachments/assets/629dc386-f146-444a-96e5-ac29f6451f11" />
+## 📸 Screenshots
 
-<img width="1321" height="589" alt="image" src="https://github.com/user-attachments/assets/c7c0e53d-96e7-49fb-a638-a02540a9d756" />
+### 🖼️ User Login Page
+<img width="1362" height="596" alt="User Login Page" src="https://github.com/user-attachments/assets/629dc386-f146-444a-96e5-ac29f6451f11" />
 
-<img width="1347" height="566" alt="image" src="https://github.com/user-attachments/assets/8ece21d7-a05e-4302-a10c-b1570b1762cb" />
+- Displays the login interface for users to access their account.
 
-<img width="1346" height="588" alt="image" src="https://github.com/user-attachments/assets/71dbedd7-0fe9-4871-b555-47fcab730e1d" />
+---
 
-<img width="1343" height="586" alt="image" src="https://github.com/user-attachments/assets/41f3427a-f203-463f-adc2-69d34329c767" />
+### 🖼️ Marked Questions Page
+<img width="1321" height="589" alt="Marked Questions Page" src="https://github.com/user-attachments/assets/c7c0e53d-96e7-49fb-a638-a02540a9d756" />
 
+- Shows questions marked for revision by the user.
+
+---
+
+### 🖼️ Add Question for Revision
+<img width="1347" height="566" alt="Add Question for Revision" src="https://github.com/user-attachments/assets/8ece21d7-a05e-4302-a10c-b1570b1762cb" />
+
+- Users can add DSA questions they want to revise later.
+
+---
+
+### 🖼️ Delete Marked Question
+<img width="1346" height="588" alt="Delete Marked Question" src="https://github.com/user-attachments/assets/71dbedd7-0fe9-4871-b555-47fcab730e1d" />
+
+- Provides functionality to delete a question from the revision list.
+
+---
+
+### 🖼️ User Dashboard
+<img width="1343" height="586" alt="User Dashboard" src="https://github.com/user-attachments/assets/41f3427a-f203-463f-adc2-69d34329c767" />
+
+- A summarized view of the user's interaction with marked questions.
