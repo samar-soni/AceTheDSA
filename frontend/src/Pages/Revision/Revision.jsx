@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import "./Revision.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import  { StoreContext } from "../../Context/StoreContext";
+import  { StoreContext } from "../../context/StoreContext";
 
 const Revision = () => {
   const [questions, setQuestions] = useState([]);

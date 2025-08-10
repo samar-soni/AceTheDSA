@@ -1,7 +1,7 @@
 import { useState,useEffect,useContext } from 'react'
 import './Navbar.css'
 // import { Routes,Route, useNavigate } from 'react-router-dom'
-import  { StoreContext } from "../../Context/StoreContext";
+import  { StoreContext } from "../../context/StoreContext";
 import { ToastContainer,toast } from 'react-toastify'
 
 
