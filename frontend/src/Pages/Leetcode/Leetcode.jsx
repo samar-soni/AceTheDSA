@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import "./Leetcode.css";
-import  { StoreContext } from "../../Context/StoreContext";
+import  { StoreContext } from "../../context/StoreContext";
 
 const Leetcode = () => {
   const [username, setUsername] = useState("");
