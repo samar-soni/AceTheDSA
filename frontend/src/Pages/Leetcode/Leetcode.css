@@ -1,0 +1,90 @@
+/* Container styling */
+.container {
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+
+  font-size: 2rem;
+  font-weight: bold;
+  color:#0068e0;
+  margin-bottom: 20px;
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.input-group button {
+  background-color: #0068e0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.input-group button:hover {
+  background-color: #2701ff;
+}
+
+/* Card for stats */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.card p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.easy {
+  color: green;
+}
+
+.medium {
+  color: orange;
+}
+
+.hard {
+  color: red;
+}
+
+/* Error message */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}

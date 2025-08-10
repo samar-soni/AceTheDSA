@@ -12,6 +12,7 @@ import { StoreContext } from './context/StoreContext'
 import CompanyQuestions from './Pages/Company/CompanySpecific/CompanyQuestions'
 import DisplayTopicWise from './Pages/Practice/Topic/DisplayTopicWise'
 import PrivateRoute from './components/PrivateRoute/privateRoute'
+import Leetcode from './Pages/Leetcode/Leetcode'
 
 
 
@@ -27,8 +28,10 @@ function App() {
     <>
       {showLoginPopup ? <LoginPopup setShowLoginPopup={setShowLoginPopup} /> : <></>}
       <Navbar showLoginPopup={showLoginPopup} setShowLoginPopup={setShowLoginPopup} />
+      
       <Routes>
         <Route path="/" element={<Home />} />
+
 
         <Route
           path="/practice"
@@ -47,6 +50,11 @@ function App() {
         <Route path="/revision" element={
           <PrivateRoute>
             <Revision />
+          </PrivateRoute>
+        } />
+         <Route path="/leetcode" element={
+          <PrivateRoute>
+            <Leetcode/>
           </PrivateRoute>
         } />
 

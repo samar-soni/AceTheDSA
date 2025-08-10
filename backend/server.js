@@ -8,6 +8,7 @@ import {connectDB} from './config/db.js';
 import userRouter from './routes/userRoute.js';
 import markQuestionRouter from './routes/markQuestionRoute.js';
 import deleteQuestionRouter from './routes/deleteQuestionRoute.js';
+import leetcodeRoute from './routes/leetcodeRoute.js';
 
 const PORT = process.env.PORT || 3000;
 
@@ -25,6 +26,8 @@ app.use('/api/user',userRouter);
 // app.use('/api/user',markQuestionRouter);
 app.use('/api/user', markQuestionRouter);
 app.use('/api/user',deleteQuestionRouter);
+
+app.use("/leetcode", leetcodeRoute);
 
 
 app.listen(PORT, () => {

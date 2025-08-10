@@ -43,6 +43,7 @@ const Navbar = ({showLoginPopup,setShowLoginPopup}) => {
           <li><a href='/practice'>Practice</a></li>
           <li><a href='/company'>Company</a></li>
           <li><a href="/revision">Revision</a></li>
+          <li><a href="/leetcode">Leetcode</a></li>
           
           {!token ? (<button className='auth-button' onClick = {()=>setShowLoginPopup(!showLoginPopup)}>Login</button>) : (<button className='auth-logout-button' onClick={logout}>Logout</button>)}
         </ul>

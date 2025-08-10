@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "./Revision.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { StoreContext } from '../../context/StoreContext';
 
 const Revision = () => {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { url } = useContext(StoreContext);
 
   const fetchRevisionQuestions = async () => {
     try {
-      const res = await fetch("https://acethedsa-backend.onrender.com/api/user/revision");
+
+      const res = await fetch(`${url}/api/user/revision`);
       const data = await res.json();
 
       if (res.ok) {
@@ -28,7 +31,7 @@ const Revision = () => {
   const deleteQuestion = async (title) => {
      try{
       console.log("Deleting question with title:", title);
-      const res = await fetch(`https://acethedsa-backend.onrender.com/api/user/revision/${encodeURIComponent(title)}`, {
+      const res = await fetch(`${url}/api/user/revision/${encodeURIComponent(title)}`, {
         method: 'DELETE',
      });
      if(res.ok){
