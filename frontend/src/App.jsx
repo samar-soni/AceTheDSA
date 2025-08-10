@@ -8,7 +8,7 @@ import Company from './Pages/Company/Company'
 import Revision from './Pages/Revision/Revision'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import { useContext } from 'react'
-import { StoreContext } from './context/StoreContext'
+import { StoreContext } from './context/StoreContext';
 import CompanyQuestions from './Pages/Company/CompanySpecific/CompanyQuestions'
 import DisplayTopicWise from './Pages/Practice/Topic/DisplayTopicWise'
 import PrivateRoute from './components/PrivateRoute/privateRoute'
@@ -20,8 +20,8 @@ import Leetcode from './Pages/Leetcode/Leetcode'
 function App() {
 
   const [showLoginPopup, setShowLoginPopup] = useState(false);
-  const { companies } = useContext(StoreContext)
-  const { topics } = useContext(StoreContext)
+  const { companies, topics } = useContext(StoreContext)
+
 
 
   return (
